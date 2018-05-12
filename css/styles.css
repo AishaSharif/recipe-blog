@@ -53,3 +53,11 @@ body{
   font-size: 1.4rem;
   color: #555;
 }
+.recipe-article--below {
+  padding-top: 4%;
+}
+.mid-img img{
+  width: 46%;
+  height: 250px;
+  padding-bottom: 4%;
+}
