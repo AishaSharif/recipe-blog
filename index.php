@@ -1,17 +1,29 @@
-<?php get_header(); ?>
-<header class="header">
-  <nav class="navbar navbar-expand-lg navbar-light float-right">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Recipes</a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link disabled" href="#">Contact</a>
+<?php wp_head(); ?>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-8">
+      <div class="recipe">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="recipe--image">
+              <img class="recipe--img" src="<?php echo get_bloginfo('template_url') ?>/img/photo-1452948491233-ad8a1ed01085.jpeg"/>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="recipe--description">
+              <div class="recipe--title">
+                  Grilled Chicken Salad with Seasonal Fruit
+              </div>
+              <div class="recipe--body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quam explicabo laudantium quisquam deserunt, culpa, voluptatibus facere porro maiores quis doloribus obcaecati molestiae! Possimus incidunt sed minus quo recusandae consectetur
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-<?php get_footer(); ?>
+  </div>
+</div>

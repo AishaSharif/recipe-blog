@@ -27,6 +27,11 @@
   background-color: green;
   height: 90vh;
 }
+
+/*---- INDEX.PHP --------- */
+.recipe--img {
+  width: 300px;
+}
 /* ------------ */
 .recipe-title {
   font-size: 1.5rem;
