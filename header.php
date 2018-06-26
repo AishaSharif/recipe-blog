@@ -13,7 +13,8 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light float-right">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand logo-title" href="<?php site_url() ?>">Sultan Recipes</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,7 +23,7 @@
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">Recipes</a>
           <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link disabled" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
         </div>
       </div>
     </nav>

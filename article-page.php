@@ -1,19 +1,22 @@
 
-<?php get_header(); ?>
+<?php get_header();
+
+  while(have_posts()){
+    the_post(); ?>
   <div class="container">
     <div class="row">
       <div class="col-md-9">
         <article class="article">
           <h1 class="recipe-title">
-            Sweet Laurel’s Grain-Free Chocolate Raspberry Cake
+            <?php the_title(); ?>
           </h1>
           <p class="recipe--timestamp">
-            <span class="recipe-category">Pastries</span>
-            <time datetime="2001-05-15T19:00">May 15</time>
+            <span class="recipe-category"> <?php echo get_the_category_list(', '); ?> </span>
+            <time datetime="2001-05-15T19:00"> <?php the_time('n.j.y'); ?> </time>
           </p>
-          <img class="recipe-img" src="img/image-1.jpeg" alt="Berries">
+          <img class="recipe-img" src="<?php echo get_bloginfo('template_url') ?>/img/image-1.jpeg"/>
           <p class="recipe-article">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, corporis? Quis nihil dolor incidunt deleniti temporibus et accusamus a numquam impedit tempora enim doloribus rem libero, magnam nisi quisquam, illo in odit aut ea vitae. Culpa odio neque nulla ipsa, consectetur libero praesentium ipsam nihil corporis adipisci accusamus quia vitae quis velit. Reiciendis similique dolores totam nulla quisquam ratione perspiciatis, harum accusantium at minima reprehenderit blanditiis minus cumque dignissimos rem est! Fuga quia, quibusdam sapiente ducimus reiciendis quae alias vero nisi ipsam officiis esse cum qui, ea voluptate soluta dolores provident id aliquam deserunt, numquam exercitationem accusantium voluptates minima. Eligendi?
+            <?php the_content(); ?>
           </p>
           <div class="ingredients">
               <h3 class="ingredient--title">Ingredients</h3>
@@ -51,8 +54,8 @@
             </ul>            
           </div>
           <div class="mid-img">
-            <img src="img/mid-img1.jpeg" alt="Mid Image">
-            <img src="img/mid-img2.jpeg" alt="Mid Image">
+            <img src="<?php echo get_bloginfo('template_url') ?>/img/mid-img1.jpeg"/>
+            <img src="<?php echo get_bloginfo('template_url') ?>/img/mid-img2.jpeg"/>
           </div>
           <div class="procedure">
             <h3 class="procedure-title">Instructions</h3>
@@ -111,5 +114,7 @@
       </div>
     </div>
   </div>
+
+  <?php } ?>
   <!-- <script src="https://use.fontawesome.com/6bbfc0af8a.js"></script> -->
 <?php get_footer(); ?>

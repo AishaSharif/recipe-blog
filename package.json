@@ -1,0 +1,23 @@
+{
+  "name": "sultan-recipes",
+  "version": "1.0.0",
+  "description": "A Recipe Blog",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AishaSharif/recipe-blog.git"
+  },
+  "author": "Aisha Sharif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AishaSharif/recipe-blog/issues"
+  },
+  "homepage": "https://github.com/AishaSharif/recipe-blog#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-shell": "^0.6.5"
+  }
+}
